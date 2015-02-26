@@ -1966,7 +1966,7 @@ int msm_ds2_dap_init(int port_id, int copp_idx, int channels,
 			goto end;
 		}
 		pr_debug("%s:index %d, dev[0x%x,0x%x]\n", __func__, idx,
-			 dev_map[i].device_id, ds2_dap_params_states.device);
+			 dev_map[idx].device_id, ds2_dap_params_states.device);
 		dev_map[idx].active = true;
 		dev_map[idx].copp_idx = copp_idx;
 		dolby_data.param_id = DOLBY_COMMIT_ALL_TO_DSP;
