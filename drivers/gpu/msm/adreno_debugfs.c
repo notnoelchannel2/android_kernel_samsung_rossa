@@ -276,8 +276,6 @@ void adreno_debugfs_init(struct adreno_device *adreno_dev)
 
 	debugfs_create_u32("wait_timeout", 0644, device->d_debugfs,
 		&adreno_dev->wait_timeout);
-	debugfs_create_u32("ib_check", 0644, device->d_debugfs,
-			   &adreno_dev->ib_check_level);
 	debugfs_create_file("active_cnt", 0444, device->d_debugfs, device,
 			    &_active_count_fops);
 	adreno_dev->ctx_d_debugfs = debugfs_create_dir("ctx",
