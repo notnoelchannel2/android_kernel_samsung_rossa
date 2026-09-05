@@ -90,9 +90,11 @@
 #define SND_AUDIOCODEC_AC3                   ((__u32) 0x00000014)
 #define SND_AUDIOCODEC_AC3_PASS_THROUGH      ((__u32) 0x00000015)
 #define SND_AUDIOCODEC_WMA_PRO               ((__u32) 0x00000016)
-#define SND_AUDIOCODEC_DTS             	     ((__u32) 0x00000017)
+#define SND_AUDIOCODEC_DTS                   ((__u32) 0x00000017)
 #define SND_AUDIOCODEC_EAC3                  ((__u32) 0x00000018)
-#define SND_AUDIOCODEC_MAX                   SND_AUDIOCODEC_EAC3
+#define SND_AUDIOCODEC_ALAC                  ((__u32) 0x00000019)
+#define SND_AUDIOCODEC_APE                   ((__u32) 0x0000001A)
+#define SND_AUDIOCODEC_MAX                   SND_AUDIOCODEC_APE
 /*
  * Profile and modes are listed with bit masks. This allows for a
  * more compact representation of fields that will not evolve
